@@ -1,6 +1,6 @@
 # [ITA] Progetto di tesi per la laurea triennale in Informatica presso UniMol
 
-Tesi sperimentale in "Databases e sistemi informativi". <br>Progetto focalizzato su tencologie quali IA e Machine Learning. <br>Corso di laurea triennale in informatica presso UniMol (Università degli Studi del Molise) <br> Relatore: Prof. Francesco Mercaldo
+Tesi sperimentale in "Databases e sistemi informativi". <br>Progetto focalizzato su tencologie quali IA e Machine Learning. <br>Corso di laurea triennale in informatica presso UniMol (Università degli Studi del Molise) <br> Relatore: [Prof. Francesco Mercaldo](https://github.com/FrancescoMercaldo)
 
 ---
 
@@ -20,4 +20,4 @@ Questi file csv sono preprocessati (aggiunta della laber "Driver") e uninione in
 
 # [ENG] Bachelor deegree' final exam in Computer Science at UniMol
 
-Experimental thesis on "Databases and information systems". <br>Progject focused on AI and Machine Learning. <br>Bachelor deegree in Computer Science at UniMol (University of Molise) <br>Supervisor: Prof. Francesco Mercaldo
+Experimental thesis on "Databases and information systems". <br>Progject focused on AI and Machine Learning. <br>Bachelor deegree in Computer Science at UniMol (University of Molise) <br>Supervisor: [Prof. Francesco Mercaldo](https://github.com/FrancescoMercaldo)
