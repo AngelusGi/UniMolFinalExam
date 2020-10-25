@@ -1,4 +1,4 @@
-GPS Time, Device Time, Longitude, Latitude,GPS Speed (Meters/second), Horizontal Dilution of Precision, Altitude, Bearing, G(x), G(y), G(z), G(calibrated), 
+GPS Time,Device Time,Longitude,Latitude,GPS Speed (Meters/second),Horizontal Dilution of Precision,Altitude,Bearing,G(x),G(y),G(z),G(calibrated),
 Wed Oct 16 10:47:03 GMT+02:00 2019,16-ott-2019 10:47:04.464,13.93070246,42.04840808,0.39,50.060997,383.0,87.4,9.65826416,-0.25144958,-0.10380554,0.00351445,
 Wed Oct 16 10:47:03 GMT+02:00 2019,16-ott-2019 10:47:04.744,13.93070246,42.04840808,0.39,50.060997,383.0,87.4,9.65826416,-0.25144958,-0.10380554,0.00351445,
 Wed Oct 16 10:47:03 GMT+02:00 2019,16-ott-2019 10:47:05.023,13.93070246,42.04840808,0.39,50.060997,383.0,87.4,9.65826416,-0.25144958,-0.10380554,0.00351445,
