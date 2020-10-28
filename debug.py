@@ -61,15 +61,13 @@ import os
 #     return clean_dataframe
 
 
-
-
 userPath = os.environ['USERPROFILE']
 basePath = userPath + "\\GitHub\\UniMolFinalExam\\Dataset\\"
 # driversList = ["Angelo"]
 driversList = ["Angelo", "Aniceto"]
 
 # for driver in driversList:
-    
+
 #     oldFilePath = "C:\\Users\\angel\\GitHub\\UniMolFinalExam\\\Dataset\\Original_CSV\\" + driver + "\\"
 
 #     print("Current path -> " + oldFilePath)
@@ -82,31 +80,103 @@ driversList = ["Angelo", "Aniceto"]
 #         clean_df = clean_header(file_to_process)
 #         newFilePath = basePath + "Preprocessed_CSV\\" + driver + "\\" + filename + ".csv"
 #         clean_df.to_csv(newFilePath, index=False)
-        
 
 
-def count_row(file_to_process):
+def count_row(file_to_process, temp_dim_df):
     df = pd.read_csv(file_to_process, low_memory=False)
-    return df.size
+    temp_dim_df += df['GPS Time'].size
+    dim = temp_dim_df
+    # print(dim)
+    return df['GPS Time'].size
 
-    
-for driver in driversList:
-    
-    oldFilePath = "C:\\Users\\angel\\GitHub\\UniMolFinalExam\\\Dataset\\Original_CSV\\" + driver + "\\"
 
-    print("Current path -> " + oldFilePath)
+# for driver in driversList:
 
-    temp_df = 0
+#     oldFilePath = "C:\\Users\\angel\\GitHub\\UniMolFinalExam\\\Dataset\\Original_CSV\\" + driver + "\\"
 
-    os.chdir(oldFilePath)
-    files = os.listdir()
+#     print("Current path -> " + oldFilePath)
 
-    for filename in files:
-        file_to_process = oldFilePath + filename
-        temp_df_lenght = count_row(file_to_process)
-        temp_df += temp_df_lenght
-    
-    print(driver + " total -> {0}".format(temp_df) )
+#     temp_df = 0
+
+#     os.chdir(oldFilePath)
+#     files = os.listdir()
+
+#     for filename in files:
+#         file_to_process = oldFilePath + filename
+#         temp_df_lenght = count_row(file_to_process)
+#         temp_df += temp_df_lenght
+
+#     print(driver + " total -> {0}".format(temp_df))
 
 # Angelo total -> 6686052
 # Aniceto total -> 18124320
+
+
+def combine_df(file_to_process, previous_df, df_size):
+    read_df = pd.read_csv(file_to_process)
+
+    file_name = file_to_process
+    temp_fn = file_name[57:]
+    file_name = temp_fn.replace('.csv','')
+
+    print("{} -> {}".format(file_name, count_row(file_to_process, df_size)))
+
+    if(previous_df is None):
+        previous_df = read_df
+        return previous_df
+    
+    return previous_df.append(read_df)
+
+
+
+# for driver in driversList:
+
+#     # oldFilePath = basePath + "Preprocessed_CSV\\" + driver + "\\"
+#     oldFilePath = basePath + "Final\\"
+
+
+
+#     print("Current path -> " + oldFilePath)
+
+#     os.chdir(oldFilePath)
+#     files = os.listdir()
+
+    # full_df = None
+    # df_size = 0
+#     for filename in files:
+#         file_to_process = oldFilePath + filename
+#         full_df = combine_df(file_to_process, full_df, df_size)
+#         print("actual dim full_df -> {}".format(full_df["GPS Time"].size))
+#         print("forecast dimension -> {}".format(df_size))
+
+#     print("################################################")
+#     print("final dim full_df -> {} | driver {}".format(full_df["GPS Time"].size, driver))
+#     #dim full_df -> 9.349 # expected
+#     newFilePath = basePath + "FullDataSet.csv"
+#     full_df.to_csv(newFilePath, index=False)
+
+
+
+
+oldFilePath = basePath + "Final\\"
+
+
+
+print("Current path -> " + oldFilePath)
+
+os.chdir(oldFilePath)
+files = os.listdir()
+
+full_df = None
+df_size = 0
+for filename in files:
+    file_to_process = oldFilePath + filename
+    full_df = combine_df(file_to_process, full_df, df_size)
+    print("actual dim full_df -> {}".format(full_df["GPS Time"].size))
+    print("forecast dimension -> {}".format(df_size))
+
+print("################################################")
+print("final dim full_df -> {}".format(full_df["GPS Time"].size))
+#dim full_df -> 9.349 # expected
+newFilePath = basePath + "FullDataSet.csv"
+full_df.to_csv(newFilePath, index=False)
