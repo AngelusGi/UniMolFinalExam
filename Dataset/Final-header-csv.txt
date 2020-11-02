@@ -1,0 +1,7 @@
+"GPS Time","Device Time","Longitude","Latitude","GPS Speed (Meters/second)","Altitude","G(x)","G(y)","G(z)","Kilometers Per Litre(Instant)(kpl)","Litres Per 100 Kilometer(Instant)(l/100km)","Actual engine % torque(%)","Trip Distance(km)","Engine RPM(rpm)","GPS Accuracy(m)","GPS Altitude(m)","GPS Latitude(°)","GPS Longitude(°)","Acceleration Sensor(X axis)(g)","Acceleration Sensor(Y axis)(g)","Acceleration Sensor(Z axis)(g)","Acceleration Sensor(Total)(g)","Run time since engine start(s)","Driver"
+
+GPS Time,Device Time,Longitude,Latitude,GPS Speed (Meters/second),Altitude,G(x),G(y),G(z),Kilometers Per Litre(Instant)(kpl),Litres Per 100 Kilometer(Instant)(l/100km),Actual engine % torque(%),Trip Distance(km),Engine RPM(rpm),GPS Accuracy(m),GPS Altitude(m),GPS Latitude(°),GPS Longitude(°),Acceleration Sensor(X axis)(g),Acceleration Sensor(Y axis)(g),Acceleration Sensor(Z axis)(g),Acceleration Sensor(Total)(g),Run time since engine start(s),Driver
+
+Driver = {A, B}
+# A = Angelo
+# B = Aniceto
