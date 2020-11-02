@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/DotNet/CsvMergeConsole/ConsoleApp1/bin/Debug/netcoreapp3.1/MergeConsole.dll",
+            "program": "${workspaceFolder}/DotNet/CsvMergeConsole/CsvMergeConsole/bin/Debug/netcoreapp3.1/MergeConsole.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/DotNet/CsvMergeConsole/ConsoleApp1",
+            "cwd": "${workspaceFolder}/DotNet/CsvMergeConsole/CsvMergeConsole",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

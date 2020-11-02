@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/DotNet/CsvMergeConsole/ConsoleApp1/MergeConsole.csproj",
+                "${workspaceFolder}/DotNet/CsvMergeConsole/CsvMergeConsole/MergeConsole.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/DotNet/CsvMergeConsole/ConsoleApp1/MergeConsole.csproj",
+                "${workspaceFolder}/DotNet/CsvMergeConsole/CsvMergeConsole/MergeConsole.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/DotNet/CsvMergeConsole/ConsoleApp1/MergeConsole.csproj",
+                "${workspaceFolder}/DotNet/CsvMergeConsole/CsvMergeConsole/MergeConsole.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
