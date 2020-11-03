@@ -1,4 +1,6 @@
 {
     "python.dataScience.jupyterServerURI": "local",
-    "python.pythonPath": "c:\\Users\\angel\\.conda\\envs\\tesi\\python.exe"
+    "python.pythonPath": "C:\\Users\\angel\\.conda\\envs\\tesi\\python.exe",
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode":"basic"
 }
