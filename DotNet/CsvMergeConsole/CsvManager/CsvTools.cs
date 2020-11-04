@@ -1,22 +1,25 @@
-﻿using ConsoleApp1;
-
-using CsvHelper;
+﻿using CsvHelper;
 
 using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace MergeConsole
+namespace CsvManager
 {
-    class CsvTools
+    public class CsvTools
     {
+        /// <summary>
+        /// questa classe fornisce due metodi
+        /// il primo per la lettura e l'esplorazione di un file
+        /// il secondo per fare il merge e l'export di più file all'interno della path
+        /// </summary>
 
         private static readonly string basePath = @"%USERPROFILE%\GitHub\UniMolFinalExam\Dataset";
-        
+
 
         public static void OpenExploreCSV(string csvPath)
-        { 
+        {
 
             Console.WriteLine(csvPath);
 
@@ -25,21 +28,16 @@ namespace MergeConsole
 
             var records = csv.GetRecords<CsvModel>();
 
-            //foreach (var record in records)
-            //{
-            //    Console.WriteLine(record.GpsTime);
-            //}
-
             Console.WriteLine($"numero di elementi -> {records.ToList().Count}");
 
         }
 
-        public static string MergeExportCSV()
+        public static string MergeExportCSV(string inputFolder = "Final\\", string outputFileName = "Final_Combined_Dataset", string fileExtension = "csv")
         {
             var csvPath = Environment.ExpandEnvironmentVariables(basePath);
-            string sourceFolder = @$"{csvPath}\Final\";
+            string sourceFolder = @$"{csvPath}\{inputFolder}";
 
-            string destinationFile = @$"{csvPath}\Final_Combined_Dataset.csv";
+            string destinationFile = @$"{csvPath}\{outputFileName}.{fileExtension}";
 
             // Specify wildcard search to match CSV files that will be combined
             string[] filePaths = Directory.GetFiles(sourceFolder, "*.csv");
@@ -64,6 +62,8 @@ namespace MergeConsole
             }
 
             fileDest.Close();
+
+            Console.WriteLine($"{nameof(sourceFolder)}: {sourceFolder}\n {nameof(destinationFile)}: {destinationFile}");
 
             return destinationFile;
         }

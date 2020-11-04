@@ -1,8 +1,12 @@
 ﻿using CsvHelper.Configuration.Attributes;
 
-namespace ConsoleApp1
+namespace CsvManager
 {
-    public class CsvModel
+    /// <summary>
+    /// classe come modello per le entità presenti nel file
+    /// </summary>
+
+    internal class CsvModel
     {
         [Name("GPS Time")]
         public string GpsTime { get; set; }

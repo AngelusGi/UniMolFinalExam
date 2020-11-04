@@ -1,9 +1,8 @@
-﻿
-using MergeConsole;
+﻿using CsvManager;
 
 using System;
 
-namespace ConsoleApp1
+namespace MergeConsole
 {
     class Program
     {
@@ -19,7 +18,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(e.Message);
             }
-            
+
         }
     }
 }
