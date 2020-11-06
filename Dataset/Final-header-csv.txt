@@ -5,3 +5,5 @@ GPS Time,Device Time,Longitude,Latitude,GPS Speed (Meters/second),Altitude,G(x),
 Driver = {A, B}
 # A = Angelo
 # B = Aniceto
+
+dataTypeDict = {"GPS Time":str ,"Device Time":str ,"Longitude":float, "Latitude":float, "GPS Speed (Meters/second)":float, "Altitude":float, "G(x)":float, "G(y)":float, "G(z)":float, "Kilometers Per Litre(Instant)(kpl)": float, "Litres Per 100 Kilometer(Instant)(l/100km)":float, "Actual engine % torque(%)":float, "Trip Distance(km)":float, "Engine RPM(rpm)":float, "GPS Accuracy(m)":float, "GPS Altitude(m)":float, "GPS Latitude(°)":float, "GPS Longitude(°)":float, "Acceleration Sensor(X axis)(g)":float, "Acceleration Sensor(Y axis)(g)":float, "Acceleration Sensor(Z axis)(g)":float, "Acceleration Sensor(Total)(g)":float, "Run time since engine start(s)":int, "Driver":str}
