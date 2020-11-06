@@ -32,7 +32,7 @@ namespace CsvManager
 
         }
 
-        public static string MergeExportCSV(string inputFolder = "Final\\", string outputFileName = "Final_Combined_Dataset", string fileExtension = "csv")
+        public static string MergeExportCSV(string inputFolder = "Final\\", string outputFileName = "Final_Dataset", string fileExtension = "csv")
         {
             var csvPath = Environment.ExpandEnvironmentVariables(basePath);
             string sourceFolder = @$"{csvPath}\{inputFolder}";
