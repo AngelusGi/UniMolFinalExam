@@ -1,0 +1,9 @@
+Per esportare un ambiente di Anaconda, usare il comando:
+
+    conda env export > tesi_env.yaml
+
+
+
+Per ricreare un ambiente di Anaconda a partire da un export, usare il comando:
+
+    conda env create -f tesi_env.yaml
