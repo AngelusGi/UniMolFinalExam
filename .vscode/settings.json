@@ -2,5 +2,6 @@
     "python.dataScience.jupyterServerURI": "local",
     "python.pythonPath": "C:\\Users\\angel\\.conda\\envs\\tesi\\python.exe",
     "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode":"basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "ai.azureml.defaultWorkspaceId": "/subscriptions/ff03e491-ea6d-4e71-8ba7-b213f2fc1eed/resourceGroups/Tesi/providers/Microsoft.MachineLearningServices/workspaces/UniMolTesi"
 }
