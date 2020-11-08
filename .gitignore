@@ -18,5 +18,7 @@ ipython_config.py
 # Generated files
 DriverA_full_map.html
 DriverB_full_map.html
+Points_DriverB_full_map.html
+Points_DriverA_full_map.html
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks
